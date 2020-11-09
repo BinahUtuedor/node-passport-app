@@ -1,3 +1,3 @@
 module.exports = {
-    MongoURI: 'mongodb+srv://druba:Management1!@sandbox.7rnbj.mongodb.net/test?retryWrites=true&w=majority'
+    MongoURI: 'mongodb+srv://<username>:<password>@sandbox.7rnbj.mongodb.net/<database>?retryWrites=true&w=majority'
 }
