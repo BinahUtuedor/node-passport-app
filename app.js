@@ -2,7 +2,8 @@ const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
 const flash = require('connect-flash');
-const session = require('express-session')
+const session = require('express-session');
+
 
 const app = express();
 
@@ -24,7 +25,7 @@ app.use(express.urlencoded({ extended: false }));
 // Express Session. You can get middleware code from https://www.npmjs.com/package/express-session. Change resave to true and takeout cookie
 app.use(session({
     secret: 'secret',
-    resave: true,
+    resave: false,
     saveUninitialized: true
   }));
 
